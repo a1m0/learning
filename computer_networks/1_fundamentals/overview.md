@@ -152,6 +152,8 @@ Read More: [Subnet](subnet.md)
 *   **Examples**: 00:14:22:01:23:45, 8C:85:90:12:3A, 00:1B:44:11:3A.
 *   **Use Cases**: Device authentication, network security, ARP.
 
+Read More: [MAC Address](mac_address.md)
+
 ### 23\. **What is ARP?**
 
 *   **Short Answer**: A protocol for mapping IP addresses to MAC addresses.
