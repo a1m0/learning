@@ -90,11 +90,15 @@ Read More: [TCP/IP Model](tcp_ip_model.md)
 *   **Examples**: Wired transmission, wireless transmission, optical transmission.
 *   **Use Cases**: Internet browsing, email, video streaming.
 
+Read More: [Data Transmission](data_transmission.md)
+
 ### 14\. **What are transmission media?**
 
 *   **Short Answer**: The physical means by which data is transmitted.
 *   **Examples**: Copper cable, fiber optic cable, radio waves.
 *   **Use Cases**: Telephone networks, broadband internet, mobile networks.
+
+Read More: [Transmission Media](transmission_media.md)
 
 ### 15\. **What is bandwidth?**
 
@@ -141,11 +145,7 @@ Read More: [TCP/IP Model](tcp_ip_model.md)
 ### 22\. **What is a MAC address?**
 
 *   **Short Answer**: A unique identifier for a network interface card.
-*   **Examples**: 00:14:22:01:23:45, 8C:85:90:12:3A
-    
-    , 00:1B:44:11:3A
-    
-    .
+*   **Examples**: 00:14:22:01:23:45, 8C:85:90:12:3A, 00:1B:44:11:3A.
 *   **Use Cases**: Device authentication, network security, ARP.
 
 ### 23\. **What is ARP?**
