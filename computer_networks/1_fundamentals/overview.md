@@ -76,6 +76,8 @@ Read More: [OSI Model](osi_model.md)
 *   **Examples**: Link, Internet, Transport, Application.
 *   **Use Cases**: Internet, web services, email.
 
+Read More: [TCP/IP Model](tcp_ip_model.md)
+
 ### 12\. **What is the difference between OSI and TCP/IP models?**
 
 *   **Short Answer**: OSI has seven layers; TCP/IP has four and is specifically for internet communication.
