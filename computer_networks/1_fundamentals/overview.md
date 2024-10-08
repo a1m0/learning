@@ -118,6 +118,8 @@ Read More: [Transmission Media](transmission_media.md)
 *   **Examples**: TCP, IP, HTTP.
 *   **Use Cases**: Web browsing, file transfer, email.
 
+Read More: [Protocols](protocols.md)
+
 ### 18\. **What is an IP address?**
 
 *   **Short Answer**: A unique identifier for devices on a network.
