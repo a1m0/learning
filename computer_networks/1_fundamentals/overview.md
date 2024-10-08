@@ -60,11 +60,15 @@ Read More: [Network Devices](network_devices.md)
 *   **Examples**: Physical, Data Link, Network.
 *   **Use Cases**: Network troubleshooting, protocol design, device compatibility.
 
+Read More: [OSI Model](osi_model.md)
+
 ### 10\. **What are the OSI model layers?**
 
 *   **Short Answer**: Physical, Data Link, Network, Transport, Session, Presentation, Application.
 *   **Examples**: Ethernet (Data Link), IP (Network), HTTP (Application).
 *   **Use Cases**: Data transmission, routing, web communication.
+
+Read More: [OSI Model](osi_model.md)
 
 ### 11\. **What is the TCP/IP model?**
 
