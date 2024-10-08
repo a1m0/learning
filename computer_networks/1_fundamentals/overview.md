@@ -144,6 +144,8 @@ Read More: [Protocols](protocols.md)
 *   **Examples**: /24, /28, /32.
 *   **Use Cases**: Network organization, security, routing efficiency.
 
+Read More: [Subnet](subnet.md)
+
 ### 22\. **What is a MAC address?**
 
 *   **Short Answer**: A unique identifier for a network interface card.
