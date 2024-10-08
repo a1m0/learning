@@ -20,7 +20,7 @@ Read More: [Network Types](network_types.md)
 *   **Examples**: Star, mesh, ring.
 *   **Use Cases**: Home networks, data centers, telecom infrastructure.
 
-Read More: [Network Topologies](network_types.md)
+Read More: [Network Topologies](network_topologies.md)
 
 ### 4\. **What are the primary types of network devices?**
 

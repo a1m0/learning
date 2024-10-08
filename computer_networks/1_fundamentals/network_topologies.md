@@ -5,7 +5,7 @@ Network topology refers to the arrangement of various elements (links, nodes, et
 *   **Description:** The simplest form, where two nodes are directly connected by a single link.
 *   **Usage:** Used mainly for direct communication between two devices.
 *   **Examples:** Direct connection between two computers or two routers.
-*   **Use Cases:** ata transfer between two devices in close proximity, such as a printer and a computer.
+*   **Use Cases:** Data transfer between two devices in close proximity, such as a printer and a computer.
 *   **Technologies:** USB, Bluetooth, infrared communication.
 *   **Metrics:**
     *   _Latency:_ Low due to the direct connection.
