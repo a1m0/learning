@@ -102,6 +102,12 @@ Here’s a list of key topics and problems in the Physical Layer of computer net
 * **Examples**: Loss in Wi-Fi signal over distance, fiber optic signal attenuation.
 * **Use Cases**: Long-distance communication, DSL internet, cell towers.
 
+### **What is Signal Amplification?**
+
+* **Short Answer**: Increasing the strength of a signal.
+* **Examples**: RF amplifiers, optical amplifiers, audio amplifiers.
+* **Use Cases**: Wireless communication, broadcasting, telecommunications.
+
 ### **What is Noise?**
 
 * **Short Answer**: It is unwanted interference that distorts the signal.
@@ -323,12 +329,6 @@ Here’s a list of key topics and problems in the Physical Layer of computer net
 * **Short Answer**: Overlapping symbols due to delay spread.
 * **Examples**: Wireless signal distortion, fiber optic delay.
 * **Use Cases**: Digital TV, cellular networks, high-speed communication.
-
-### **What is Signal Amplification?**
-
-* **Short Answer**: Increasing the strength of a signal.
-* **Examples**: RF amplifiers, optical amplifiers, audio amplifiers.
-* **Use Cases**: Wireless communication, broadcasting, telecommunications.
 
 ### **What is Quantization Error?**
 
