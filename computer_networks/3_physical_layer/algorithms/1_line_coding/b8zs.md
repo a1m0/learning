@@ -2,9 +2,9 @@
 
 **1\. Basic Introduction to Bipolar Encoding:** Bipolar encoding is a signaling scheme used in digital transmission where there are three voltage levels:
 
-*   Positive voltage (+V)
-*   Negative voltage (-V)
-*   Zero voltage (0V)
+* Positive voltage (+V)
+* Negative voltage (-V)
+* Zero voltage (0V)
 
 In bipolar encoding, binary `1`s alternate between the positive and negative voltages. For example, the first `1` might be represented by +V, the next `1` by -V, the next one by +V again, and so on. This alternation is called "bipolar" or "alternate mark inversion (AMI)." Binary `0`s are represented by 0V (no signal).
 
@@ -18,17 +18,16 @@ If too many zeros occur in a row, the receiver can lose synchronization, and it 
 
 Here’s how the substitution works:
 
-*   **If the previous pulse was positive (+V):** The 8 zeros are replaced by the pattern `000VB0VB`, where:
-    
-    *   V = violation (same sign as the last `1` pulse, violating the alternating rule)
-    *   B = bipolar pulse (follows the standard alternation rule)
-*   **If the previous pulse was negative (-V):** The 8 zeros are replaced by the pattern `000VB0VB` in a similar way, except the signs of the V pulses follow the rule that violates the previous alternation.
-    
+* **If the previous pulse was positive (+V):** The 8 zeros are replaced by the pattern `000VB0VB`, where:
+
+  * V = violation (same sign as the last `1` pulse, violating the alternating rule)
+  * B = bipolar pulse (follows the standard alternation rule)
+* **If the previous pulse was negative (-V):** The 8 zeros are replaced by the pattern `000VB0VB` in a similar way, except the signs of the V pulses follow the rule that violates the previous alternation.
 
 **5\. The B8ZS Substitution Patterns:**
 
-*   If the preceding `1` was +V, the 8 zeros are replaced with `000+-0-+`
-*   If the preceding `1` was -V, the 8 zeros are replaced with `000-+0+-`
+* If the preceding `1` was +V, the 8 zeros are replaced with `000+-0-+`
+* If the preceding `1` was -V, the 8 zeros are replaced with `000-+0+-`
 
 This pattern of violation allows the receiver to detect that this is not normal data but an intentional encoding, enabling the receiver to reconstruct the original data and maintain synchronization.
 
@@ -36,9 +35,9 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **7\. B8ZS Benefits:**
 
-*   Solves the problem of long sequences of zeros.
-*   Preserves synchronization between the transmitter and receiver.
-*   It's particularly used in North America for T1 lines and similar telecommunications systems.
+* Solves the problem of long sequences of zeros.
+* Preserves synchronization between the transmitter and receiver.
+* It's particularly used in North America for T1 lines and similar telecommunications systems.
 
 * * *
 
@@ -50,12 +49,12 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `101000000001`
 
-1.  Bipolar AMI encoding (no substitution):  
+1. Bipolar AMI encoding (no substitution):  
     `+ - 0 0 0 0 0 0 0 0 +`
-    
-2.  Apply B8ZS when 8 consecutive zeros are detected:
-    
-    *   After the first `+`, eight zeros occur. Substituting the zeros with the B8ZS pattern `000+-0-+`:
+
+2. Apply B8ZS when 8 consecutive zeros are detected:
+
+    * After the first `+`, eight zeros occur. Substituting the zeros with the B8ZS pattern `000+-0-+`:
 
 **Encoded B8ZS stream:** `+ - 0 0 0 +- 0 - + +`
 
@@ -65,12 +64,12 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `10000000010`
 
-1.  Bipolar AMI encoding (no substitution):  
+1. Bipolar AMI encoding (no substitution):  
     `+ 0 0 0 0 0 0 0 0 -`
-    
-2.  Apply B8ZS substitution:
-    
-    *   Eight zeros are substituted with `000+-0-+`:
+
+2. Apply B8ZS substitution:
+
+    * Eight zeros are substituted with `000+-0-+`:
 
 **Encoded B8ZS stream:** `+ 0 0 000+-0-+ -`
 
@@ -80,13 +79,13 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `1000000001000000001`
 
-1.  Bipolar AMI encoding:  
+1. Bipolar AMI encoding:  
     `+ 0 0 0 0 0 0 0 0 - 0 0 0 0 0 0 0 0 +`
-    
-2.  Apply B8ZS:
-    
-    *   First 8 zeros become `000+-0-+`
-    *   Second 8 zeros become `000-+0+-`
+
+2. Apply B8ZS:
+
+    * First 8 zeros become `000+-0-+`
+    * Second 8 zeros become `000-+0+-`
 
 **Encoded B8ZS stream:**  
 `+ 0 0 000+-0-+ - 0 0 000-+0+- +`
@@ -97,12 +96,12 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `1100000000`
 
-1.  Bipolar AMI encoding:  
+1. Bipolar AMI encoding:  
     `+ - 0 0 0 0 0 0 0 0`
-    
-2.  Apply B8ZS:
-    
-    *   Since the previous pulse is `-`, eight zeros are substituted with `000-+0+-`
+
+2. Apply B8ZS:
+
+    * Since the previous pulse is `-`, eight zeros are substituted with `000-+0+-`
 
 **Encoded B8ZS stream:**  
 `+ - 0 0 000-+0+-`
@@ -113,12 +112,12 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `10101000000000000101`
 
-1.  Bipolar AMI encoding:  
+1. Bipolar AMI encoding:  
     `+ - + - + - 0 0 0 0 0 0 0 0 0 + - +`
-    
-2.  Apply B8ZS:
-    
-    *   The first sequence of 8 zeros is replaced with `000+-0-+`
+
+2. Apply B8ZS:
+
+    * The first sequence of 8 zeros is replaced with `000+-0-+`
 
 **Encoded B8ZS stream:**  
 `+ - + - + - 000+-0-+ 0 + - +`
@@ -129,13 +128,13 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `1000000000100000000011`
 
-1.  Bipolar AMI encoding:  
+1. Bipolar AMI encoding:  
     `+ 0 0 0 0 0 0 0 0 - 0 0 0 0 0 0 0 0 + -`
-    
-2.  Apply B8ZS:
-    
-    *   First eight zeros are substituted with `000+-0-+`
-    *   Second eight zeros are substituted with `000-+0+-`
+
+2. Apply B8ZS:
+
+    * First eight zeros are substituted with `000+-0-+`
+    * Second eight zeros are substituted with `000-+0+-`
 
 **Encoded B8ZS stream:**  
 `+ 0 0 000+-0-+ - 0 0 000-+0+- + -`
@@ -146,13 +145,13 @@ This pattern of violation allows the receiver to detect that this is not normal 
 
 **Data stream (without B8ZS):** `1100000000010000000001010101`
 
-1.  Bipolar AMI encoding:  
+1. Bipolar AMI encoding:  
     `+ - 0 0 0 0 0 0 0 0 + 0 0 0 0 0 0 0 0 - + - +`
-    
-2.  Apply B8ZS:
-    
-    *   First eight zeros are substituted with `000-+0+-`
-    *   Second eight zeros are substituted with `000+-0-+`
+
+2. Apply B8ZS:
+
+    * First eight zeros are substituted with `000-+0+-`
+    * Second eight zeros are substituted with `000+-0-+`
 
 **Encoded B8ZS stream:**  
 `+ - 0 0 000-+0+- + 0 0 000+-0-+ - + - +`

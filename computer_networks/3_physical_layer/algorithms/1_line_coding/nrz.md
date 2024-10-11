@@ -2,22 +2,21 @@ The Non-Return to Zero (NRZ) algorithm is a line coding scheme used in digital c
 
 In NRZ encoding, a binary 1 and a binary 0 are represented by two distinct voltage levels. Unlike other line coding schemes, NRZ does not use any signal transitions between bits, making it more efficient in terms of bandwidth usage. There are two primary forms of NRZ: Non-Return to Zero-Level (NRZ-L) and Non-Return to Zero-Inverted (NRZ-I).
 
-
 ### Detailed Breakdown of the Algorithm
 
-1.  **NRZ-L Algorithm:**
-    *   Choose the `1` and `0` voltage representations. For example positive for `1` and negative for `0`.
-    *   Start with an initial voltage level.
-    *   For each bit in the data stream:
-        *   If the bit is 1, transmit a positive voltage level.
-        *   If the bit is 0, transmit a negative voltage level.
-    *   No transition occurs between bits unless the bit value changes.
-2.  **NRZ-I Algorithm:**
-    *   Start with an initial voltage level.
-    *   For each bit in the data stream:
-        *   If the bit is 1, invert the voltage level.
-        *   If the bit is 0, maintain the current voltage level.
-    *   Transitions occur only when there is a 1 in the bitstream.
+1. **NRZ-L Algorithm:**
+    * Choose the `1` and `0` voltage representations. For example positive for `1` and negative for `0`.
+    * Start with an initial voltage level.
+    * For each bit in the data stream:
+        * If the bit is 1, transmit a positive voltage level.
+        * If the bit is 0, transmit a negative voltage level.
+    * No transition occurs between bits unless the bit value changes.
+2. **NRZ-I Algorithm:**
+    * Start with an initial voltage level.
+    * For each bit in the data stream:
+        * If the bit is 1, invert the voltage level.
+        * If the bit is 0, maintain the current voltage level.
+    * Transitions occur only when there is a 1 in the bitstream.
 
 ### Error Detection
 
@@ -35,12 +34,12 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution**:
 
-1.  `1` → Positive Voltage
-2.  `0` → Negative Voltage
-3.  `1` → Positive Voltage
-4.  `0` → Negative Voltage
+1. `1` → Positive Voltage
+2. `0` → Negative Voltage
+3. `1` → Positive Voltage
+4. `0` → Negative Voltage
 
-**NRZ-L Signal**: <sup>___</sup> <sub> ___ </sub> <sup> ___ </sup> <sub> ___ </sub>
+**NRZ-L Signal**: <sup>___</sup> <sub>___ </sub> <sup> ___</sup> <sub>___ </sub>
 
 #### Example 2: NRZ-I, Simple Sequence
 
@@ -48,26 +47,26 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution**:
 
-1.  Start with a baseline (assume positive voltage).
-2.  `1` → Invert → Negative Voltage
-3.  `0` → No Change → Negative Voltage
-4.  `1` → Invert → Positive Voltage
-5.  `0` → No Change → Positive Voltage
+1. Start with a baseline (assume positive voltage).
+2. `1` → Invert → Negative Voltage
+3. `0` → No Change → Negative Voltage
+4. `1` → Invert → Positive Voltage
+5. `0` → No Change → Positive Voltage
 
-**NRZ-I Signal**: <sub> ___ ___ </sub> <sup> ___ ___</sup> 
+**NRZ-I Signal**: <sub> ______ </sub> <sup> ______</sup>
 
 #### Example 3: NRZ-L, Consecutive Bits
 
 **Bitstream**: `1100`
 
-**Solution**: 
+**Solution**:
 
-1.  `1` → Positive Voltage
-2.  `1` → Positive Voltage (no change)
-3.  `0` → Negative Voltage
-4.  `0` → Negative Voltage (no change)
+1. `1` → Positive Voltage
+2. `1` → Positive Voltage (no change)
+3. `0` → Negative Voltage
+4. `0` → Negative Voltage (no change)
 
-**NRZ-L Signal**: <sup> ___ ___</sup> <sub> ___ ___ </sub>
+**NRZ-L Signal**: <sup> ______</sup> <sub> ______ </sub>
 
 #### Example 4: NRZ-I, Consecutive Bits
 
@@ -75,13 +74,13 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution**:
 
-1.  Start with a baseline (assume positive voltage).
-2.  `1` → Invert → Negative Voltage
-3.  `1` → Invert → Positive Voltage
-4.  `0` → No Change → Positive Voltage
-5.  `0` → No Change → Positive Voltage
+1. Start with a baseline (assume positive voltage).
+2. `1` → Invert → Negative Voltage
+3. `1` → Invert → Positive Voltage
+4. `0` → No Change → Positive Voltage
+5. `0` → No Change → Positive Voltage
 
-**NRZ-I Signal**: <sub> ___ </sub> <sup> ___ ___ ___ </Ssup>
+**NRZ-I Signal**: <sub> ___</sub> <sup>___ ______ </Ssup>
 
 #### Example 5: NRZ-L, Alternating Bits
 
@@ -89,14 +88,14 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution**:
 
-1.  `1` → Positive Voltage
-2.  `0` → Negative Voltage
-3.  `1` → Positive Voltage
-4.  `0` → Negative Voltage
-5.  `1` → Positive Voltage
-6.  `0` → Negative Voltage
+1. `1` → Positive Voltage
+2. `0` → Negative Voltage
+3. `1` → Positive Voltage
+4. `0` → Negative Voltage
+5. `1` → Positive Voltage
+6. `0` → Negative Voltage
 
-**NRZ-L Signal**: <sup>___</sup> <sub> ___ </sub> <sup> ___ </sup> <sub> ___ </sub> <sup> ___ </sup> <sub> ___ </sub>
+**NRZ-L Signal**: <sup>___</sup> <sub>___ </sub> <sup> ___</sup> <sub>___ </sub> <sup> ___</sup> <sub>___ </sub>
 
 #### Example 6: NRZ-I, Alternating Bits
 
@@ -104,15 +103,15 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution**:
 
-1.  Start with a baseline (assume positive voltage).
-2.  `1` → Invert → Negative Voltage
-3.  `0` → No Change → Negative Voltage
-4.  `1` → Invert → Positive Voltage
-5.  `0` → No Change → Positive Voltage
-6.  `1` → Invert → Negative Voltage
-7.  `0` → No Change → Negative Voltage
+1. Start with a baseline (assume positive voltage).
+2. `1` → Invert → Negative Voltage
+3. `0` → No Change → Negative Voltage
+4. `1` → Invert → Positive Voltage
+5. `0` → No Change → Positive Voltage
+6. `1` → Invert → Negative Voltage
+7. `0` → No Change → Negative Voltage
 
-**NRZ-I Signal**: <sub> ___ ___ </sub> <sup> ___ ___ </sup> <sub> ___ ___ </sub>
+**NRZ-I Signal**: <sub> ______ </sub> <sup> ______ </sup> <sub> ______ </sub>
 
 #### Example 7: NRZ-L and NRZ-I Combined Scenario
 
@@ -120,29 +119,29 @@ In NRZ-I, the transition occurs only when a 1 is encountered in the data stream.
 
 **Solution (NRZ-L)**:
 
-1.  `1` → Positive Voltage
-2.  `1` → Positive Voltage
-3.  `0` → Negative Voltage
-4.  `1` → Positive Voltage
-5.  `0` → Negative Voltage
-6.  `0` → Negative Voltage
-7.  `1` → Positive Voltage
-8.  `1` → Positive Voltage
+1. `1` → Positive Voltage
+2. `1` → Positive Voltage
+3. `0` → Negative Voltage
+4. `1` → Positive Voltage
+5. `0` → Negative Voltage
+6. `0` → Negative Voltage
+7. `1` → Positive Voltage
+8. `1` → Positive Voltage
 
-**NRZ-L Signal**: <sup> ___ ___ </sup> <sub> ___ </sub> <sup> ___ </sup> <sub> ___ ___ </sub> <sup> ___ ___ </sup>
+**NRZ-L Signal**: <sup> ______ </sup> <sub> ___</sub> <sup>___ </sup> <sub> ______ </sub> <sup> ______ </sup>
 
 **Solution (NRZ-I)**:
 
-1.  Start with a baseline (assume positive voltage).
-2.  `1` → Invert → Negative Voltage
-3.  `1` → Invert → Positive Voltage
-4.  `0` → No Change → Positive Voltage
-5.  `1` → Invert → Negative Voltage
-6.  `0` → No Change → Negative Voltage
-7.  `0` → No Change → Negative Voltage
-8.  `1` → Invert → Positive Voltage
-9.  `1` → Invert → Negative Voltage
+1. Start with a baseline (assume positive voltage).
+2. `1` → Invert → Negative Voltage
+3. `1` → Invert → Positive Voltage
+4. `0` → No Change → Positive Voltage
+5. `1` → Invert → Negative Voltage
+6. `0` → No Change → Negative Voltage
+7. `0` → No Change → Negative Voltage
+8. `1` → Invert → Positive Voltage
+9. `1` → Invert → Negative Voltage
 
-**NRZ-I Signal**: <sub> ___ </sub> <sup> ___ ___ </sup> <sub> ___ ___ ___ </sub> <sup> ___ </sup> <sub> ___ </sub>
+**NRZ-I Signal**: <sub> ___</sub> <sup>___ ___</sup> <sub>___ ______ </sub> <sup> ___</sup> <sub>___ </sub>
 
 These examples illustrate how both NRZ-L and NRZ-I encode bitstreams, demonstrating their behavior across simple, moderate, and complex bit patterns.
