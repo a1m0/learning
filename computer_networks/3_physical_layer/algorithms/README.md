@@ -74,28 +74,20 @@ Here are key algorithms related to the Physical Layer in computer networks, alon
 * **Use Cases**: Military communication, GPS, Wi-Fi.
 * **Metrics**: Bandwidth, interference rejection, signal-to-noise ratio.
 
-## 10\. **Frequency Division Duplexing (FDD) and Time Division Duplexing (TDD)**
+## 10\. **Link Duplexing Algorithms**
 
-* **Problem**: Facilitating bidirectional communication over a single frequency channel.
-* **Solution**: FDD allocates separate frequencies for sending and receiving, while TDD alternates time slots for each.
+* **Problem**: Enabling bidirectional communication between devices over the same medium, often simultaneously, to improve efficiency in data transmission.
+* **Solution**: FTechniques like Frequency Division Duplexing (FDD) and Time Division Duplexing (TDD) allocate either frequency bands or time slots to separate the transmission and reception of signals, preventing interference.
 * **Examples**: LTE (FDD & TDD), Wi-Fi (TDD), Cable modems (FDD).
 * **Use Cases**: Cellular networks, Wi-Fi, satellite communication.
-* **Metrics**: Channel efficiency, latency, throughput.
+* **Metrics**: Spectral Efficiency, latency, throughput.
 
-## 11\. **Adaptive Modulation and Coding (AMC)**
+## 11\. **Link Adaptation Algorithms**
 
-* **Problem**: Adapting transmission rates to varying channel conditions to maintain reliable communication.
-* **Solution**: AMC dynamically adjusts the modulation scheme and coding rate based on current channel conditions.
-* **Examples**: Modulation switching in 4G/5G, adaptive bitrate streaming, Wi-Fi.
-* **Use Cases**: Cellular networks, satellite communication, video streaming.
-* **Metrics**: Bit error rate (BER), spectral efficiency, throughput.
-
-## 12\. **Polarization Division Multiplexing (PDM)**
-
-* **Problem**: Doubling the data transmission rate on a single fiber optic channel.
-* **Solution**: PDM transmits data on orthogonal polarizations, allowing separate data streams within the same channel.
-* **Examples**: Dual-polarized radio waves, PDM in optical networks, satellite communication.
-* **Use Cases**: Fiber optic communication, radio broadcasting, satellite communication.
-* **Metrics**: Bit rate, polarization crosstalk, spectral efficiency.
+* **Problem**: Adapting transmission parameters in real-time to maintain reliable and efficient communication despite varying channel conditions.
+* **Solution**: Algorithms like Adaptive Modulation and Coding (AMC), Link Adaptation Control, and Hybrid Automatic Repeat Request (HARQ) dynamically adjust transmission parameters based on current channel conditions.
+* **Examples**: Adaptive Modulation and Coding (AMC), Link Adaptation Control, Hybrid Automatic Repeat Request (HARQ).
+* **Use Cases**: Cellular networks, satellite communication, Wifi Networks.
+* **Metrics**: Spectral Efficiency, Signal-to-Noise-Ratio (SNR), Throughput, Bit Error Rate (BER).
 
 These algorithms address various challenges in the Physical Layer, such as optimizing data transmission, ensuring data integrity, and managing interference. The metrics help in evaluating the effectiveness and efficiency of each algorithm in practical scenarios.
