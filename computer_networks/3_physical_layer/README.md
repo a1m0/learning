@@ -55,12 +55,14 @@ Here’s a list of key topics and problems in the Physical Layer of computer net
 * **Short Answer**:  Continuous signals that vary smoothly over time, representing information like sound or light waves.
 * **Examples**: Radio broadcasts, audio signals in voice communication, and analog TV signals.
 * **Use Cases**: FM/AM Radio, Analog Video Transmission.
+* **[Read More about Analog Signals](descriptions/analog_signal.md)**
 
 ### **What are Digital Signals?**
 
 * **Short Answer**:  Discrete signals that represent information as a sequence of binary values (0s and 1s).
 * **Examples**: Binary data in computers, digital audio, and digital television signals.
 * **Use Cases**:  Binary data transmission over Ethernet, digital television, and data storage on hard drives.
+* **[Read More about Digital Signals](descriptions/digital_signal.md)**
 
 ### **What is A/D Conversion (Analog to Digital)?**
 
