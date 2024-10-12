@@ -28,7 +28,7 @@ Here’s a list of key topics and problems in the Physical Layer of computer net
 * **Short Answer**: Transmission media that broadcast signals over the air.
 * **Examples**: Radio waves, microwaves, infrared.
 * **Use Cases**: Wi-Fi, satellite communication, Bluetooth.
-* **[Read More about Guided Media](descriptions/unguided_media.md)**
+* **[Read More about Unguided Media](descriptions/unguided_media.md)**
 
 ### **What is Line Encoding?**
 
