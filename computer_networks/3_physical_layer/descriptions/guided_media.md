@@ -121,3 +121,5 @@ Fiber optic cables transmit data as pulses of light through thin strands of glas
 | Fiber Optic Cable | High-speed internet, long distance | 500 m - 80 km | Up to several Tbps | Glass/plastic, cladding, PVC    |
 
 Each type of guided media has unique advantages and use cases depending on factors like distance, required bandwidth, and budget. Fiber optic cables offer the highest performance but at a higher cost, while twisted pair cables are more economical for short-distance applications.
+
+**[Back to Overview](../README.md#what-are-guided-media)**

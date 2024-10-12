@@ -230,3 +230,5 @@ Metrics include:
 ### Conclusion
 
 Unguided media provides diverse ways of wireless communication, from short-range infrared to long-distance satellite communication. The choice of medium depends on factors like distance, bandwidth, interference, cost, and environmental conditions. Each type has its own advantages, disadvantages, and implementation challenges, making it suitable for different networking use cases.
+
+**[Back to Overview](../README.md#what-are-unguided-media)**

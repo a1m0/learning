@@ -60,3 +60,5 @@ Digital signals are discrete waveforms that represent data in binary format, con
 * While analog signals represent continuous values, digital signals use discrete steps, which makes them more robust against noise. However, digital signals can only approximate continuous signals (like natural sound) and require techniques like sampling and quantization. Most modern systems use a combination of both analog and digital signals, converting analog signals to digital for processing, transmission, and storage, and back to analog for playback in audio and video systems.
 
 Digital signals play a crucial role in modern technology, making it possible to store, transmit, and process vast amounts of data efficiently and reliably. Their robustness and flexibility have made them essential in fields ranging from telecommunications to multimedia and computing.
+
+**[Back to Overview](../README.md#what-are-digital-signals)**

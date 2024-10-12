@@ -58,3 +58,5 @@ Analog signals are continuous waveforms that represent varying quantities of phy
 * Digital signals are less prone to noise and degradation, as they are represented by discrete values. However, analog signals provide a more natural and continuous representation of real-world phenomena. In many modern systems, analog signals are converted to digital signals (using Analog-to-Digital Converters or ADCs) for easier processing, storage, and transmission.
 
 Analog signals continue to be an essential part of many technologies, especially in areas where continuous representation is beneficial.
+
+**[Back to Overview](../README.md#what-are-analog-signals)**
