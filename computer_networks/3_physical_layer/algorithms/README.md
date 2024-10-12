@@ -18,7 +18,15 @@ Here are key algorithms related to the Physical Layer in computer networks, alon
 * **Use Cases**: Wi-Fi, radio broadcasting, satellite communication.
 * **Metrics**: Bandwidth, bit error rate (BER), modulation index.
 
-## 3\. **Error Detection Algorithms**
+## 3\. **Demodulation Algorithms**
+
+* **Problem**: Extracting the original digital or analog signal from a modulated carrier signal.
+* **Solution**: Algorithms reverse modulation techniques such as ASK, FSK, or PSK to retrieve the original data.
+* **Examples**: Coherent demodulation, Non-coherent demodulation, Quadrature demodulation.
+* **Use Cases**: Radio communication, Wi-Fi, digital TV.
+* **Metrics**: Bit error rate (BER), signal-to-noise ratio (SNR), bandwidth.
+
+## 4\. **Error Detection Algorithms**
 
 * **Problem**: Detecting errors in data caused by noise or interference during transmission.
 * **Solution**: Techniques like parity bits, checksums, and CRC detect errors by adding extra information to the data.
@@ -26,7 +34,7 @@ Here are key algorithms related to the Physical Layer in computer networks, alon
 * **Use Cases**: Ethernet, Wi-Fi, digital TV.
 * **Metrics**: Detection rate, false positive rate, computational overhead.
 
-## 4\. **Error Correction Algorithms**
+## 5\. **Error Correction Algorithms**
 
 * **Problem**: Correcting errors that occur during data transmission to ensure data integrity.
 * **Solution**: Algorithms like Hamming, Reed-Solomon, and Turbo Codes detect and correct errors without requiring retransmission.
@@ -34,7 +42,7 @@ Here are key algorithms related to the Physical Layer in computer networks, alon
 * **Use Cases**: CD/DVD, satellite communication, digital TV.
 * **Metrics**: Correction rate, redundancy, coding gain.
 
-## 5\. **Quantization Algorithms**
+## 6\. **Quantization Algorithms**
 
 * **Problem**: Reducing the range of continuous analog signal values to a finite number of levels for digital representation.
 * **Solution**: Algorithms like uniform and non-uniform quantization reduce the signal resolution, based on the application requirements.
@@ -42,21 +50,13 @@ Here are key algorithms related to the Physical Layer in computer networks, alon
 * **Use Cases**: Audio processing, video encoding, digital transmission.
 * **Metrics**: Signal-to-quantization-noise ratio (SQNR), quantization error, bit rate.
 
-## 6\. **Multiplexing Algorithms**
+## 7\. **Multiplexing Algorithms**
 
 * **Problem**: Efficiently using a single communication channel to transmit multiple signals.
 * **Solution**: Algorithms like Time-Division Multiplexing (TDM), Frequency-Division Multiplexing (FDM), and Wavelength-Division Multiplexing (WDM) allocate resources within a channel.
 * **Examples**: TDM, FDM, WDM.
 * **Use Cases**: Telecommunication, cable TV, broadband internet.
 * **Metrics**: Channel utilization, bandwidth efficiency, data rate.
-
-## 7\. **Demodulation Algorithms**
-
-* **Problem**: Extracting the original digital or analog signal from a modulated carrier signal.
-* **Solution**: Algorithms reverse modulation techniques such as ASK, FSK, or PSK to retrieve the original data.
-* **Examples**: Coherent demodulation, Non-coherent demodulation, Quadrature demodulation.
-* **Use Cases**: Radio communication, Wi-Fi, digital TV.
-* **Metrics**: Bit error rate (BER), signal-to-noise ratio (SNR), bandwidth.
 
 ## 8\. **Digital Signal Processing (DSP) Algorithms**
 
