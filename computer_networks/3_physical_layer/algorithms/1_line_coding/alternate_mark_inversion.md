@@ -1,3 +1,7 @@
+# Alternate Mark Inversion
+
+## Overview
+
 Alternate Mark Inversion (AMI) is a line coding scheme used in digital data transmission, especially in telecommunications. It's often used to encode binary data into a form suitable for transmission over a physical medium, where it can effectively reduce or eliminate some common issues that arise in data transmission, such as synchronization loss and direct current (DC) offset. Let's go over the concept and gradually increase the complexity of the explanation.
 
 ### 1\. Basic Concept of AMI
@@ -35,6 +39,8 @@ The AMI encoding scheme follows these rules:
 
 * If the bit is `0`, output `0V` (no signal).
 * If the bit is `1`, output a signal that alternates in polarity from the previous `1`.
+
+## Examples
 
 Now that we’ve established the basic encoding process, let’s go through some examples to solidify our understanding.
 

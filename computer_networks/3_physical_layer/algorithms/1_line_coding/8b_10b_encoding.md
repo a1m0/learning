@@ -1,4 +1,6 @@
-### Overview of the 8B/10B Encoding Algorithm
+# 8B/10B Encoding Algorithm
+
+## Overview
 
 The 8B/10B encoding algorithm is a line encoding technique used in digital communications, specifically in the Physical Layer of computer networks. Its purpose is to encode 8-bit data into 10-bit symbols for transmission. This encoding is widely used in high-speed communication protocols like Gigabit Ethernet, Fibre Channel, and HDMI.
 
@@ -32,9 +34,9 @@ The primary objectives of the 8B/10B encoding algorithm are:
 
 5. **Adjust Running Disparity**: The algorithm keeps track of the running disparity and adjusts it accordingly based on the transmitted codeword. If the RD+ codeword is chosen, the disparity is increased, and if the RD- codeword is chosen, it is decreased.
 
-### Example Problems and Solutions
+## Example Problems and Solutions
 
-#### Example 1: Basic Encoding of 8-bit Data `0x00` (0000 0000)
+### Example 1: Basic Encoding of 8-bit Data `0x00` (0000 0000)
 
 1. Split the byte: **5-bit** = `00000`, **3-bit** = `000`.
 2. Encode the 5-bit portion `00000`:
@@ -44,7 +46,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine and adjust disparity:
     * Resulting 10-bit output = `1001110100`.
 
-#### Example 2: Encoding 8-bit Data `0x01` (0000 0001)
+### Example 2: Encoding 8-bit Data `0x01` (0000 0001)
 
 1. Split the byte: **5-bit** = `00000`, **3-bit** = `001`.
 2. Encode the 5-bit portion `00000`:
@@ -54,7 +56,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output = `1001110101`.
 
-#### Example 3: Encoding `0x1E` (0001 1110)
+### Example 3: Encoding `0x1E` (0001 1110)
 
 1. Split the byte: **5-bit** = `00011`, **3-bit** = `110`.
 2. Encode the 5-bit portion `00011`:
@@ -64,7 +66,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output = `1010111100`.
 
-#### Example 4: Encoding `0x2D` (0010 1101)
+### Example 4: Encoding `0x2D` (0010 1101)
 
 1. Split the byte: **5-bit** = `00101`, **3-bit** = `101`.
 2. Encode the 5-bit portion `00101`:
@@ -74,7 +76,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output = `1100011011`.
 
-#### Example 5: Encoding `0x3A` (0011 1010)
+### Example 5: Encoding `0x3A` (0011 1010)
 
 1. Split the byte: **5-bit** = `00111`, **3-bit** = `010`.
 2. Encode the 5-bit portion `00111`:
@@ -84,7 +86,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output = `1101100110`.
 
-#### Example 6: Encoding `0x4B` (0100 1011)
+### Example 6: Encoding `0x4B` (0100 1011)
 
 1. Split the byte: **5-bit** = `01001`, **3-bit** = `011`.
 2. Encode the 5-bit portion `01001`:
@@ -94,7 +96,7 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output = `1010010111`.
 
-#### Example 7: Encoding a Control Character `K28.5`
+### Example 7: Encoding a Control Character `K28.5`
 
 1. `K28.5` represents a special control character:
     * 5-bit portion for `K28` = `11100`.
@@ -106,6 +108,6 @@ The primary objectives of the 8B/10B encoding algorithm are:
 4. Combine:
     * Resulting 10-bit output for `K28.5` = `0011111011`.
 
-### Summary
+## Summary
 
 8B/10B encoding plays a vital role in ensuring the integrity and synchrony of high-speed digital data transmission by maintaining DC balance, supporting clock recovery, and enhancing error detection. Through examples, we can see how the algorithm maps different 8-bit values to their respective 10-bit codewords.
